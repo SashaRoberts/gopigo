@@ -11,7 +11,7 @@ Threshold = 30
 
 SHORT_NORMALIZE = (1.0/32768.0)
 chunk = 1024*4
-FORMAT = pyaudio.paInt8
+FORMAT = pyaudio.paInt16 #8
 CHANNELS = 1
 RATE = 44100
 swidth = 2
