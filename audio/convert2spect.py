@@ -9,6 +9,7 @@ from pathlib import Path
 from fastai import *
 from fastai.vision import *
 import pandas as pd
+from robo_client import connection
 
 ##### LOG #####
 import logging
@@ -116,5 +117,13 @@ try:
   
 except KeyboardInterrupt:
     mic_logger.info('Finish')
+    
+    HOST, PORT = 'datastream.ilykei.com', 30078
+    login = 'saroberts@uchicago.edu'
+    password = 'gsa8&#fa!FA'
+    split_id = 19
+    filename = 'gpg.log'
+    connection(HOST, PORT, login, password, split_id, filename)   
+    
     print('Program Ended')
   
