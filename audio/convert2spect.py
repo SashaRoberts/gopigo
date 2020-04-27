@@ -120,7 +120,7 @@ except KeyboardInterrupt:
     
     HOST, PORT = 'datastream.ilykei.com', 30078
     login = 'saroberts@uchicago.edu'
-    password = 'gsa8&#fa!FA'
+    password = '1VOF9IBW'
     split_id = 19
     filename = 'gpg.log'
     connection(HOST, PORT, login, password, split_id, filename)   
